@@ -288,7 +288,7 @@ async function handleLogin(event) {
         });
         const data = await response.json();
         if (data.status === 'success') {
-            alert('登入成功！正在跳轉至購物頁面...');
+            alert('登入成功！跳轉至購物頁面...');
             window.location.href = '/shopping'; 
         } else {
             alert(data.message);
@@ -328,7 +328,7 @@ async function handleRegister(event) {
         });
         const data = await response.json();
         if (data.status === 'success') {
-            alert('註冊成功！將導向登入頁面。');
+            alert('註冊成功！將跳至登入頁面。');
             window.location.href = '/page_login';
         } else {
             alert(data.message);
